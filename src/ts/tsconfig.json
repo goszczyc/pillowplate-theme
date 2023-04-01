@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "es2022",
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src/ts"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,31 @@
+// Font import
+@import url("https://use.typekit.net/kzs6sdf.css");
+
+// Tailwind base
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Set default font
+@layer base {
+  html {
+    font-family: aktiv-grotesk, sans-serif;
+  }
+  body {
+    background-color: #fafafa;
+  }
+  b,
+  strong {
+    font-weight: 700;
+  }
+}
+
+
+.main {
+  padding-top: 136px
+}
+
+// Import parts
+@import "./universal";
+@import "./sub/contact";
+@import "./sub/pagination-bar";

@@ -1,0 +1,152 @@
+.footer__contact-input {
+  @apply w-full 
+  text-[15px]
+  text-black 
+  bg-white 
+  px-5 
+  py-4 
+  border 
+  border-solid 
+  border-[#bebebe]
+  outline-none
+  cursor-pointer
+  focus:border-primary;
+}
+
+.footer__contact-radio {
+  .wpcf7-list-item {
+    @apply ml-8;
+  }
+  label,
+  input[type="radio"] {
+    @apply cursor-pointer;
+  }
+  input[type="radio"] {
+    accent-color: #010101;
+  }
+}
+
+.wpcf7-list-item {
+  @apply m-0;
+}
+
+.footer__contact-acceptance {
+  @apply hidden;
+  & ~ span {
+    @apply block
+    relative
+    text-[15px]
+    text-white
+    pl-8
+    before:absolute
+    before:top-1/2
+    before:left-0
+    before:w-5
+    before:h-5
+    before:border
+    before:border-[#6c6c6c]
+    before:border-solid
+    before:-translate-y-1/2
+    after:absolute
+    after:top-1/2
+    after:left-[10px]
+    after:w-3
+    after:h-2
+    after:border-l-3
+    after:border-b-3
+    after:border-solid
+    after:border-[transparent]
+    after:-translate-x-[48%]
+    after:-translate-y-2/3
+    after:-rotate-45;
+  }
+
+  &:checked ~ span {
+    @apply after:border-primary;
+  }
+}
+
+.contact {
+  .wpcf7-spinner {
+    @apply absolute
+    bottom-full
+    left-1/2
+    rounded-none
+    w-1
+    h-3
+    bg-primary
+    m-0
+    -translate-x-1/2
+    -translate-y-2
+    origin-bottom
+    animate-load
+    before:absolute
+    before:left-2
+    before:top-[unset]
+    before:bottom-0
+    before:w-1
+    before:h-3
+    before:rounded-none
+    before:animate-load-100
+    before:bg-primary
+    after:bg-primary
+    after:absolute
+    after:bottom-0
+    after:left-4
+    after:w-1
+    after:animate-load-200;
+  }
+
+  .wpcf7-response-output {
+    @apply text-white;
+  }
+//   .envelope {
+//     position: absolute;
+//     visibility: hidden;
+//     left: 50%;
+//     bottom: 100%;
+//     width: 40px;
+//     height: 28px;
+//     margin-bottom: 10px;
+//     border: 2px solid red;
+//     transform: translateX(-50%);
+
+//     &::before,
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       width: 20px;
+//       height: 2px;
+//       background-color: red;
+//     }
+//     &::before {
+//       transform: rotate(20deg);
+//       transform-origin: top left;
+//       left: 0;
+//     }
+//     &::after {
+//       right: 0;
+//       transform: rotate(-20deg);
+//       transform-origin: top right;
+//     }
+//   }
+// }
+// .contact form.sent .envelope{
+//   visibility: visible;
+//   animation: flyAway 250ms 300ms ease-in forwards, show 300ms ease-in-out forwards;
+// }
+// @keyframes flyAway {
+//   100% {
+//     transform: translate(100%);
+//   }
+// }
+
+// @keyframes show {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+}

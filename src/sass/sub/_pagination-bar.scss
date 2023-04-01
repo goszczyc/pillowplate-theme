@@ -1,0 +1,7 @@
+.page-numbers {
+  @apply flex items-center text-sm hover:font-bold focus:font-bold mx-1 p-1;
+
+  &.current {
+    @apply font-bold;
+  }
+}
